@@ -16,8 +16,7 @@ const UserSchema = new Schema({
     required: true
   },
   avatar: {
-    type: String,
-    required: true
+    type: String
   },
   date: {
     type: Date,
@@ -25,4 +24,4 @@ const UserSchema = new Schema({
   }
 });
 
-module.exports = Users = mongoose.Model("users", UserSchema);
+module.exports = Users = mongoose.model("users", UserSchema);
